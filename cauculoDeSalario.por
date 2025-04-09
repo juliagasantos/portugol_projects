@@ -1,17 +1,18 @@
 programa {
+  inclua biblioteca Matematica
   funcao inicio() {
-    real valorHora, quatidadeHoras, salario, resultado
+    // indice de massa corporal IMC
+    // com base na altura da pessoa, construa um algoritmo que calcule seu peso ideal,
+    //  usando a seguinte fórmula: (72.7 * altura) - 58
+    
+  real altura, resultado
 
-    escreva("Digite o valor que ganha por hora: ")
-    leia(valorHora)
+  escreva("Digite sua altura: ")
+  leia(altura)
 
-    escreva("Digite a quatidade de horas: ")
-    leia(quatidadeHoras)
+  resultado = (72.7 * altura) - 58
 
-    salario =  valorHora * quatidadeHoras
+  escreva("Seu peso ideal: ", Matematica.arredondar (resultado, 2))
 
-    resultado = salario
-
-    escreva("Sálario: ", resultado)
   }
 }
